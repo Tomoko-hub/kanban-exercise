@@ -10,6 +10,7 @@ const Example2 = () => {
         <div className="col-12 example-grid-col">
           <p>Hello 2,<br/>
           This is just an example container, you can remove me!
+          ööööö
           </p>
           <ExampleComponent name={"example2"} />
         </div>
