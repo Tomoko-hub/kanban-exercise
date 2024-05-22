@@ -1,8 +1,12 @@
 import React, {useEffect} from "react";
+
 import BoardAPI from './api/board';
 import UserAPI from './api/user';
+
+import Header from "./components/header/Header";
 import Example1 from './containers/Example1';
 import Example2 from './containers/Example2';
+
 import {
   Routes,
   Route
@@ -13,7 +17,7 @@ const App = () => {
 
   //this function is for showing the available mocked Rest API,
   //remove this function when starting the exercise
-  const exampleOfMockAPI = async () => {
+   /* const exampleOfMockAPI = async () => {
     let res = await BoardAPI.getBoardColumns();
     console.log("get board columns", res);
 
@@ -54,15 +58,16 @@ const App = () => {
 
   useEffect(() => {
     exampleOfMockAPI();
-  }, [])
+  }, [])  */
 
   return (
     <div className="container">
       {/*create your own containers and components*/}
-      <Routes>
+      <Header />
+      {/* <Routes>
         <Route path="/" element={<Example1 />}/>
         <Route path="/example2" element={<Example2 />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

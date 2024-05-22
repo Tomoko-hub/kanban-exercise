@@ -10,14 +10,15 @@ const Example1 = () => {
         <div className="col-12 example-grid-col">
           <p>Hello,<br/>
           This is just an example container, you can remove me!
+          Ok!
           </p>
           <ExampleComponent name={"example 1"} />
         </div>
       </div>
       <div className="row mb-3">
         <div className="col-4 example-grid-col">This</div>
-        <div className="col-4 example-grid-col">exercise</div>
-        <div className="col-4 example-grid-col">uses bootstrap.</div>
+        <div className="col-4 example-grid-col">comes from</div>
+        <div className="col-4 example-grid-col">example1</div>
       </div>
     </>
   )
