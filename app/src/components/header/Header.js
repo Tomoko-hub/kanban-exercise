@@ -1,9 +1,11 @@
 import React from "react";
 
+import { Heading } from '@chakra-ui/react'
+
 
 const Header =()=>{
    return(
-    <div>This is Header.</div>
+      <Heading>Kanban board</Heading>
    ) 
 }
 

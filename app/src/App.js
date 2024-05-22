@@ -12,6 +12,8 @@ import {
   Route
 } from 'react-router-dom';
 
+import { ChakraProvider } from '@chakra-ui/react';
+
 
 const App = () => {
 
@@ -62,12 +64,13 @@ const App = () => {
 
   return (
     <div className="container">
+      <ChakraProvider>
       {/*create your own containers and components*/}
-      <Header />
       {/* <Routes>
         <Route path="/" element={<Example1 />}/>
         <Route path="/example2" element={<Example2 />} />
       </Routes> */}
+      </ChakraProvider>
     </div>
   );
 }
