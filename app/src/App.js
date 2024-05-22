@@ -70,6 +70,7 @@ const App = () => {
         <Route path="/" element={<Example1 />}/>
         <Route path="/example2" element={<Example2 />} />
       </Routes> */}
+        <Header />
       </ChakraProvider>
     </div>
   );
