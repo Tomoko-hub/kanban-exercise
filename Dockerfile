@@ -5,3 +5,4 @@ COPY ./app/yarn.lock ./
 RUN yarn install --frozen-lockfile
 COPY . .
 EXPOSE 9000
+CMD [ "yarn", "start-watch"]

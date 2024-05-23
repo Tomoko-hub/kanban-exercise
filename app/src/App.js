@@ -3,7 +3,8 @@ import React, {useEffect} from "react";
 import BoardAPI from './api/board';
 import UserAPI from './api/user';
 
-import Header from "./components/header/Header";
+import Header from "./components/layout/Header";
+import AddTaskButton from "./components/layout/buttons/AddTaskButton";
 import Example1 from './containers/Example1';
 import Example2 from './containers/Example2';
 
@@ -71,6 +72,7 @@ const App = () => {
         <Route path="/example2" element={<Example2 />} />
       </Routes> */}
         <Header />
+        <AddTaskButton />
       </ChakraProvider>
     </div>
   );

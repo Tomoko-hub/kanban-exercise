@@ -20,3 +20,6 @@
 
     Question: 'Not mandatory, but bonus: After listing tasks in the column, there should be link/button which will open modal for creating a new task for the column.' -> This part I have to think more. 
     I think it would be easier for users to have a separate button for modal and 'add item'-button. (-> Or same functionality as Jira?? How about create both??)
+
+-Day3 23.5:
+  -change Dockerfile, package.json and yaml file to enable to use hot reloading
