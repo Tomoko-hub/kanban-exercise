@@ -1,11 +1,11 @@
 import React from "react";
-import { Button } from "bootstrap";
+import { Button } from '@chakra-ui/react'
 
-const AddTaskButton = () => {
+function AddTaskButton (){
     return (
         <div>
             <p>Add task</p>
-           {/*  <Button
+            <Button
                 size='md'
                 height='48px'
                 width='200px'
@@ -13,7 +13,7 @@ const AddTaskButton = () => {
                 borderColor='green.500'
             >
                 + Create new task
-            </Button> */}
+            </Button>
         </div>
     )
 }

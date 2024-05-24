@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: RGBA(255, 255, 255, 0.48);
+    height:100vh;
+}
 
 .example-grid-col {
     padding-top: 1rem;
