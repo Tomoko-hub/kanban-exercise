@@ -3,8 +3,7 @@ import React, {useEffect} from "react";
 import BoardAPI from './api/board';
 import UserAPI from './api/user';
 
-import Header from "./components/layout/Header";
-import AddTaskButton from "./components/layout/buttons/AddTaskButton.jsx";
+import Header from "./components/layout/Header.jsx";
 import Example1 from './containers/Example1';
 import Example2 from './containers/Example2';
 
@@ -14,7 +13,8 @@ import {
 } from 'react-router-dom';
 
 import { ChakraProvider } from '@chakra-ui/react';
-import TaskCards from "./components/tasks/TaskCards.jsx";
+import { Grid, GridItem } from '@chakra-ui/react'
+import Task from "./components/Task.jsx";
 
 
 const App = () => {
@@ -73,8 +73,15 @@ const App = () => {
         <Route path="/example2" element={<Example2 />} />
       </Routes> */}
         <Header />
-        <TaskCards />
-        <AddTaskButton />
+        <Grid margin='1rem 3rem' templateColumns='repeat(4, 1fr)' gap={6}>
+          <GridItem w='100%' h='100vh' bg='gray.100'>
+            Todo
+            <Task />
+          </GridItem>
+          <GridItem w='100%' h='100vh' bg='gray.100'>In progress</GridItem>
+          <GridItem w='100%' h='100vh' bg='gray.100'>Ready For Review</GridItem>
+          <GridItem w='100%' h='100vh' bg='gray.100'>Complete</GridItem>
+        </Grid>
       </ChakraProvider>
     </div>
   );
