@@ -26,3 +26,6 @@
 
 -Day4 24.5:
   -memo to self:after changing jsonfile(remove/add/update) dependencies, after updating Dockerfile -> docker-compose build
+
+-Day5 30.5
+  -
