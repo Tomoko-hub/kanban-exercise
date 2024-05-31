@@ -32,10 +32,14 @@ const App = () => {
 
     const backlogBoardData = boardColumns.find(column => column.id === 'e38bba16-6c80-4ac3-9102-5dbb6aeb7c19');
     console.log(backlogBoardData.name);
-
+    console.log('hello:');
     if(!boardColumns){
       return <div>Column does not found</div>
   }
+  
+   /*  const columnNames = boardColumns.map(column => column.name);
+
+    console.log('column name:',columnNames); */
 
     /* res = await UserAPI.getUsers();
     console.log("get users", res);
@@ -87,7 +91,7 @@ const App = () => {
         <Header />
         <Grid margin='1rem 3rem' templateColumns='repeat(4, 1fr)' gap={6}>
           <GridItem w='100%' h='100vh' bg='gray.100'>
-            Backlog
+            Backlog 
             <Task />
           </GridItem>
           <GridItem w='100%' h='100vh' bg='gray.100'>In progress</GridItem>
